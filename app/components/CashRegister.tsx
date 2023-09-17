@@ -105,16 +105,18 @@ const CashRegister: React.FC<CashRegisterProps> = ({
 
   return (
     <div className="bg-gray-100 px-6 py-6 rounded-lg border-2 border-gray-300">
-      <header>
-        <h1 className="text-3xl font-semibold mb-4 text-center">
-          Cash Register
-        </h1>
+      <header className="flex flex-col items-center mb-6 md:flex-row md:justify-between md:items-center">
+        <h1 className="text-3xl font-semibold">Cash Register</h1>
+        <section
+          aria-labelledby="total-amount"
+          data-testid="total-amount-text"
+          className="mt-2 md:mt-0"
+        >
+          <h2 id="total-amount" className="text-1xl font-semibold">
+            Total Amount: <span aria-live="polite">${totalMoney}</span>
+          </h2>
+        </section>
       </header>
-      <section aria-labelledby="total-amount" data-testid="total-amount-text">
-        <h2 id="total-amount" className="text-1xl text-center">
-          Total Amount: <span aria-live="polite">${totalMoney}</span>
-        </h2>
-      </section>
       <section>
         {Object.entries(money).map(([denomination, quantity]) => (
           <DenominationRow
