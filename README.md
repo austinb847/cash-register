@@ -4,7 +4,7 @@ Welcome to the Cash Register web application! This web app is built with Next.js
 
 ## Production URL
 
-Visit the app here: https://cash-register-2fru7d7pc-austinb847.vercel.app/
+Visit the app here: https://cash-register-ochre.vercel.app/
 
 ## Getting Started Locally
 
