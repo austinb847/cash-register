@@ -2,7 +2,11 @@
 
 Welcome to the Cash Register web application! This web app is built with Next.js and allows you to keep track of money and dispense change. It handles bills of denominations $20, $10, $5, $2, and $1. You can add money to the register, take money from the register, and dispense change for specific dollar amounts. If change cannot be made using the bills in the register, it raises an error message.
 
-## Getting Started
+## Production URL
+
+Visit the app here: https://cash-register-2fru7d7pc-austinb847.vercel.app/
+
+## Getting Started Locally
 
 1. Clone this repository:
 
